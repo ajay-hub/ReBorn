@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddRecord"
+    android:background="@drawable/gradient_bg">
+
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:id="@+id/homei"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_addphoto_black"
+        app:c_border="true"
+        app:c_border_color="@color/gray1"
+        app:c_border_width="1dp" />
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homei"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/inputbp"
+        android:hint="Name"
+        android:inputType="text"
+        android:padding="5dp"></EditText>
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/inputbp"
+        android:hint="Contact No"
+        android:inputType="phone"
+        android:padding="5dp"></EditText>
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobile"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/inputbp"
+        android:hint="address"
+        android:inputType="text"
+        android:padding="5dp"></EditText>
+
+    <EditText
+        android:id="@+id/sqft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/inputbp"
+        android:hint="Age"
+        android:inputType="number"
+        android:padding="5dp"></EditText>
+
+    <EditText
+        android:id="@+id/balcony"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sqft"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/inputbp"
+        android:hint="Blood group"
+        android:inputType="text"
+        android:padding="5dp"></EditText>
+
+    <EditText
+        android:id="@+id/bhk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/balcony"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/inputbp"
+        android:hint="Any fatal diseases at the moment? (Y/n)"
+        android:inputType="text"
+        android:padding="5dp"></EditText>
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bhk"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/inputbp"
+        android:hint="Aadhar Card No"
+        android:inputType="number"
+        android:padding="5dp"></EditText>
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/price"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/inputbp"
+        android:hint="Last Donated"
+        android:inputType="date"
+        android:padding="5dp"></EditText>
+
+    <EditText
+        android:id="@+id/des"
+        android:layout_width="372dp"
+        android:layout_height="37dp"
+        android:layout_below="@+id/date"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/inputbp"
+        android:hint="Location of Last donation"
+        android:inputType="text"
+        android:minHeight="90dp"
+        android:padding="5dp"></EditText>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/save"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/inputbp"
+        android:padding="5dp"
+        android:src="@drawable/ic_done_white"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>
